@@ -11,7 +11,8 @@ import SwiftUI
 struct LearnEnvironmentObjetctApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(settings: UserSettings())
+            ContentView()
+                .environmentObject(UserSettings())
         }
     }
 }
